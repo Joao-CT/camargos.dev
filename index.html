@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Vitor | Software & Data Engineer</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-main: #e6edf3;
+            --text-dim: #8b949e;
+            --accent: #2f81f7;
+            --border: #30363d;
+            --success: #238636;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+    
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .hero-text {
+            max-width: 600px;
+            color: var(--text-dim);
+            font-size: 1.1rem;
+        }
+
+        /* Seções */
+        section {
+            padding: 80px 0;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        h2::after {
+            content: "";
+            height: 1px;
+            flex-grow: 1;
+            background: var(--border);
+        }
+
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: rgba(47, 129, 247, 0.1);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(47, 129, 247, 0.2);
+        }
+
+        
+        .cta-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--border);
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            padding: 40px 0;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+      
+        @media (max-width: 768px) {
+            header { height: auto; padding: 100px 0 60px; }
+            section { padding: 50px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>João Vitor Camargos</h1>
+            <p class="subtitle">Software Engineer & Data Engineering Student</p>
+            <p class="hero-text">
+                Focado em arquitetura, lógica e na resolução de problemas complexos. 
+                Desenvolvedor Full Stack com forte domínio em SQL e integrações de sistemas.
+            </p>
+            <div class="cta-group">
+                <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-camargos-380935292/" class="btn btn-primary" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Joao-CT" class="btn btn-secondary" target="_blank">GitHub</a>
+            </div>
+        </header>
+
+        <section id="experiencia">
+            <h2>Especialidades Técnicas</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Software Engineering</h3>
+                    <p>Desenvolvimento robusto com foco em escalabilidade e manutenibilidade.</p>
+                    <div class="tech-tags">
+                        <span class="tag">PHP/Laravel</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Data Engineering</h3>
+                    <p>Modelagem de dados e otimização de consultas para grandes volumes de informação.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Oracle SQL</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">TOTVS</span>
+                        <span class="tag">ERP Integrations</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>IoT & Hardware</h3>
+                    <p>Integração de hardware e software para soluções de automação.</p>
+                    <div class="tech-tags">
+                        <span class="tag">ESP32</span>
+                        <span class="tag">C/C++</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos Selecionados</h2>
+            
+        </section>
+
+        <footer>
+            <p>&copy; 2026 João Vitor Camargos. .</p>
+        </footer>
+    </div>
+
+</body>
+</html>
