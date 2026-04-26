@@ -18,6 +18,7 @@ Linguagens & Frameworks:
 
 Dados & Infra:
 Databases:Oracle SQL, MySQL, PostgreSQL
+
 Ferramentas: Git, GitHub, Integrações de APIs (ERP Consinco/TOTVS)
 
 Conecte-se comigo
