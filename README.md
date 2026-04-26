@@ -1,6 +1,6 @@
 João Vitor Camargos
-Software Engineer Student | Data Engineering Enthusiast
 
+Software Engineer Student | Data Engineering Enthusiast
 
 Sobre Mim
 Estudante de Engenharia de Software com foco em construir soluções escaláveis e seguras. Minha abordagem vai além do código: priorizo o "porquê" por trás da arquitetura e a lógica estrutural para garantir eficiência e performance.
